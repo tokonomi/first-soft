@@ -1,0 +1,44 @@
+.section_block{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-between;
+    padding: 0 55px;
+}
+
+.reversed{
+    flex-direction: row-reverse;
+}
+
+.image_side img{
+    max-width: 675px;
+    width: 100%;
+}
+
+.text_side_title{
+    padding-bottom: 10px;
+}
+.text_side_title h2{
+    font-size: 41px;
+    font-weight: 700;
+    color: #2e4051;
+}
+.text_side_title p{
+    font-weight: 300;
+    font-size: .8em;
+    color: #60bff1;
+}
+
+
+.text_side{
+    max-width: 500px;
+    width: 100%;
+}
+
+.text_side_subs p{
+    max-width: 400px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+}

@@ -1,0 +1,73 @@
+.service_section{
+    height: 100vh;
+    padding: 0 55px;
+    display: flex;
+    position: relative;
+}
+
+.service_carousel{
+    display: flex;
+}
+
+.service_cards{
+    max-width: 350px;
+    height: 490px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 5px #F2C010;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.service_title p{
+    border: 1px solid #F2C010;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    margin-bottom: 0;
+    font-size: 1.4em;
+}
+
+.service_title p span{
+    font-size: .7em;
+}
+
+.serve_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serve_description p{
+    padding-bottom: 25px;
+}
+
+
+.carousel_sec{
+    margin: 10px 0;
+}
+
+
+/* Modal */
+
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow:unset;
+    width: 60vw;
+    height: 40vw;
+    background-color: rgba(0, 0, 0, 0.349);
+    backdrop-filter: blur(20px);
+}

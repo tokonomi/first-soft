@@ -1,0 +1,18 @@
+.price_enter{
+    width: 100vw;
+    height: 200px;
+    background-image: url('../../assets/Services/price.jpg') ;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background:  linear-gradient(#f0f8ff, #fff);
+    position: relative;
+}
+
+.price_enter img{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
