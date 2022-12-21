@@ -22,11 +22,20 @@
 
 .logo_block img{
     height: 44px;
+    padding: 3px 0;
 }
 
 .logo_block h3{
     padding-left: 10px;
     font-weight: 800;
+}
+
+.link{
+    transition: all .3s ease-in-out;
+}
+
+.link:hover{
+    color: #F2BE45;
 }
 
 .nav_bar ul{

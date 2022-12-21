@@ -6,6 +6,14 @@ footer{
     margin-top: 30px;
 }
 
+footer img{
+    position: absolute;
+    left: -100px;
+    bottom: -50px;
+    width: 300px;
+    opacity: .1;
+}
+
 footer button{
     margin: 0;
     border-radius: 0;

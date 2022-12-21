@@ -4,6 +4,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
     return(
         <footer>
+            <img src={require('../../assets/web-logo.png')}/>
             <div className={styles.behind_block}>
                 <div className={styles.footer_order}>
                     <div>
@@ -24,7 +25,7 @@ const Footer = () => {
                         <li>+994 (12) 123 12 23</li>
                         <li>Блог</li>
                         <li>С нами сотрудничают</li>
-                        <li><a href="https://storyset.com/data">Data illustrations by Storyset</a></li>
+                        <li><a href="https://storyset.com/data" target="_blank">Data illustrations by Storyset</a></li>
                     </ul>
                     <div>
                         <h4>© Все права защищены</h4>

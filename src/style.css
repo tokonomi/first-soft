@@ -35,3 +35,13 @@ button{
 .rec.rec-item-wrapper{
     padding: 20px 0!important;
 }
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.active{
+    color: #F2BE45;
+    text-decoration: none;
+}

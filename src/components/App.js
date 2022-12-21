@@ -1,6 +1,8 @@
 import '../style.css'
 
 import React from "react";
+import {Routes, Route, Link} from 'react-router-dom';
+
 import Nav from './Nav/Nav';
 import HeaderSection from './HeaderSection/HeaderSection';
 import BtrxSection from './BtrxSection/BtrxSection';
@@ -13,16 +15,20 @@ import Crm from './CRM/Crm';
 import MainC from './1C/MainC';
 import Services from './Services/Services';
 import HomePage from './HomePage/HomePage';
+import ScrollToTop from './ScrollToTop';
 
 class App extends React.Component{
     render(){
         return(
             <div className="container">
+                <ScrollToTop/>
                 <Nav />
-                {/* <HomePage/>
-                <Crm/>
-                <MainC/>
-                <Services/> */}
+                    <Routes>
+                        <Route path='/' element={<HomePage/>}/>
+                        <Route path='/crm' element={<Crm/>}/>
+                        <Route path='/1c' element={<MainC/>}/>
+                        <Route path='/services' element={<Services/>}/>
+                    </Routes>
                 <Footer/>
             </div>
         )

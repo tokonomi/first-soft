@@ -12,6 +12,10 @@ const Serve = (props) => {
         setIsOpen(!isOpen);
         document.querySelector('body').style.overflow = 'hidden';
     }
+    const closeModal = () => {
+        setIsOpen(false);
+        document.querySelector('body').style.overflow = 'inherit';
+    }
     return(
         <section className={`${styles.service_section}`} id="cards">
             <ReactElasticCarousel itemsToShow={3} pagination={false} itemsToScroll={3}>
@@ -34,7 +38,7 @@ const Serve = (props) => {
                     })
                 }
             </ReactElasticCarousel>
-            {isOpen ? <Modal/> : ''}
+            {isOpen ? <Modal opened = {isOpen} close = {closeModal}/> : ''}
         </section>
     )
 }
