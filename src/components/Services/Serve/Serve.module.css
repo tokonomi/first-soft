@@ -21,6 +21,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transition: all .5s ease-in-out;
+}
+
+
+.service_cards:hover{
+    background-color: #F2C010;
+}
+
+.service_cards button{
+    transition: all 1s ease-in-out;
+}
+.service_cards:hover button{
+    background: rgb(255, 255, 255)!important;
+    box-shadow: 0 0 5px #ffffff;
+}
+.service_cards:hover .service_title p{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px #ffffff;
+    border: 1px solid #ffffff;
+    transition: all .5s ease-in-out;
 }
 
 .service_title p{
@@ -36,6 +56,7 @@
     margin: 20px auto;
     margin-bottom: 0;
     font-size: 1.4em;
+    transition: all .5s ease-in-out;
 }
 
 .service_title p span{
