@@ -12,33 +12,17 @@ import Footer from './Footer/Footer';
 import Crm from './CRM/Crm';
 import MainC from './1C/MainC';
 import Services from './Services/Services';
+import HomePage from './HomePage/HomePage';
 
 class App extends React.Component{
     render(){
         return(
             <div className="container">
                 <Nav />
-                <HeaderSection/>
-                <BtrxSection/>
-                {
-                    data.sections.map(el => {
-                        return(
-                            <Section key={el.id} {...el}/>
-                        )
-                    })
-                }
-                <Solutions/>
-                {
-                    data.footerSections.map(el => {
-                        return(
-                            <FooterSection key={el.id} {...el}/>
-                        )
-                    })
-                }
-
+                {/* <HomePage/>
                 <Crm/>
                 <MainC/>
-                <Services/>
+                <Services/> */}
                 <Footer/>
             </div>
         )
