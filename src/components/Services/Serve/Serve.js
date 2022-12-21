@@ -7,8 +7,13 @@ import Modal from "./Modal";
 
 const Serve = (props) => {
     const [isOpen, setIsOpen] = useState(false)
+    const showModal = () => {
+        document.getElementById("cards").scrollIntoView()
+        setIsOpen(!isOpen);
+        document.querySelector('body').style.overflow = 'hidden';
+    }
     return(
-        <section className={`${styles.service_section}`}>
+        <section className={`${styles.service_section}`} id="cards">
             <ReactElasticCarousel itemsToShow={3} pagination={false} itemsToScroll={3}>
                 {
                     data.serveCards.map((e) => {
@@ -21,7 +26,7 @@ const Serve = (props) => {
                                     </div>
                                     <div className={styles.serve_description}>
                                         <p>{e.text}</p>
-                                        <button onClick={() => setIsOpen(!isOpen)}>Подробнее</button>
+                                        <button onClick={showModal}>Подробнее</button>
                                     </div>
                                 </div>
                             </div>
