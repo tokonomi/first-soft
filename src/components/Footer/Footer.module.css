@@ -121,3 +121,37 @@ footer button{
 .footer_copyright h3{
     font-weight: 500;
 }
+
+@media only screen and (max-width: 1024px) {
+    .footer_right_side{
+        flex-direction: column-reverse;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .footer_left_side{
+        width: inherit;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer_left_side p{
+        width: 100%;
+    }
+    .footer_list{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer_right_side{
+        align-items: center;
+    }
+    .behind_block{
+        display: none;
+    }
+    footer{
+        padding: 50px 0 0 0;
+    }
+    .footer_copyright{
+        width: 100%;
+        text-align: center;
+    }
+}

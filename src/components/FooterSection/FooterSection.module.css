@@ -119,6 +119,12 @@
         flex-direction: column-reverse;
         padding: 0 0 100px 0;
     }
+    .properties_list{
+        justify-content: center;
+    }
+    .inner_text_block h1{
+        text-align: center;
+    }
     .section_block .reversed{
         flex-direction: column;
     }
@@ -131,7 +137,7 @@
         transform: inherit;
     }
     .properties_list li{
-        max-width: 245px;
+        max-width: 25%;
         font-size: .8em;
     }
     br{
@@ -139,5 +145,24 @@
     }
 
 }
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 500px) {}
+@media only screen and (max-width: 768px) {
+    .properties_list li{
+        max-width: 275px;
+        font-size: 1em;
+    }
+    .section_buttons{
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .landscape{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .properties_list li{
+        text-align: center;
+    }
+}

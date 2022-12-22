@@ -23,7 +23,7 @@ const FooterSection = (props) => {
                         </ul>
                         {
                             props.button ? 
-                            <div>
+                            <div className = {styles.section_buttons}>
                                 <button className={styles.more_button}>Подробнее</button>
                                 <button className={styles.order_button}>Заказать</button>
                             </div> : ''
