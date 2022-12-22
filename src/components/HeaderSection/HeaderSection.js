@@ -44,6 +44,13 @@ const HeaderSection = () => {
                     </div>
                 </div>
             </section>
+            <div className={styles.sub_section_header}>
+                <p className="">
+                    Предоставляем полный спектр услуг для автоматизации 
+                    бизнес-процессов компании посредством решений на базе
+                    <span style={{color: '#FFB200'}}> 1С:Предприятие</span>
+                </p>
+            </div>
             <div className={styles.presentation_text}>
                 {animated_text_content()}
                 {animated_text_content('x')}

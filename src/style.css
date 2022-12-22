@@ -7,10 +7,14 @@
     scroll-behavior: smooth;
 }
 
+#main_width{
+    overflow: hidden;
+}
+
 .container{
     margin: 0 auto;
-    overflow: hidden;
     position: relative;
+    max-width: 1720px;
 }
 
 
@@ -44,4 +48,11 @@ a{
 .active{
     color: #F2BE45;
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .container{
+        max-width: 1320px;
+    }    
 }

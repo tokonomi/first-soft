@@ -1,4 +1,6 @@
 .solutions{
+    margin:1em -100%; /* old browsers fallback */
+    margin:1em calc(50% - 50vw);
     text-align: center;
     background-color: #efd766;
     padding: 55px 0;

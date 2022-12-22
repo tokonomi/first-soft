@@ -1,8 +1,12 @@
 .sub_section{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 75px 0;
+}
+
+.images img{
+    max-width: 480px;
 }
 
 .reversed_section{
@@ -10,13 +14,7 @@
 }
 
 .images{
-    width: 400px;
     position: relative;
-}
-
-.images img:nth-child(2){
-    position: absolute;
-    left: 30%;
 }
 
 .section_text{
@@ -59,4 +57,11 @@
 
 .paragraphs p{
     margin-bottom: 15px;
+}
+
+.text_block{
+    background-color: #ffffff40;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-radius: 10px;
 }

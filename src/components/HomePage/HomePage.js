@@ -10,7 +10,6 @@ import FooterSection from "../FooterSection/FooterSection";
 const HomePage = () => {
     return <>
         <HeaderSection/>
-        <BtrxSection/>
         {
             data.sections.map(el => {
                 return(
@@ -19,6 +18,7 @@ const HomePage = () => {
             })
         }
         <Solutions/>
+        <BtrxSection/>
         {
             data.footerSections.map(el => {
                 return(

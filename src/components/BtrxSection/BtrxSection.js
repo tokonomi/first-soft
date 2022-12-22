@@ -9,13 +9,7 @@ const BtrxSection = (props) => {
             
     return(
         <div className={styles.haha}>
-            <div className={styles.sub_section_header}>
-                <p className="">
-                    Предоставляем полный спектр услуг для автоматизации 
-                    бизнес-процессов компании посредством решений на базе
-                    <span style={{color: '#FFB200'}}> 1С:Предприятие</span>
-                </p>
-            </div>
+            
             <section className={styles.sub_section}>
                 <div>
                     <div className={styles.images}>

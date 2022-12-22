@@ -20,16 +20,18 @@ import ScrollToTop from './ScrollToTop';
 class App extends React.Component{
     render(){
         return(
-            <div className="container">
-                <ScrollToTop/>
-                <Nav />
-                    <Routes>
-                        <Route path='/' element={<HomePage/>}/>
-                        <Route path='/crm' element={<Crm/>}/>
-                        <Route path='/1c' element={<MainC/>}/>
-                        <Route path='/services' element={<Services/>}/>
-                    </Routes>
-                <Footer/>
+            <div id='main_width'>
+                <div className="container">
+                    <ScrollToTop/>
+                    <Nav />
+                        <Routes>
+                            <Route path='/' element={<HomePage/>}/>
+                            <Route path='/crm' element={<Crm/>}/>
+                            <Route path='/1c' element={<MainC/>}/>
+                            <Route path='/services' element={<Services/>}/>
+                        </Routes>
+                    <Footer/>
+                </div>
             </div>
         )
     }

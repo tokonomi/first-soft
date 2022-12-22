@@ -1,9 +1,11 @@
 footer{
-    width: 100%;
     height: 75vh;
     background-color: #f3f3f3;
     position: relative;
     margin-top: 30px;
+    margin:1em -100%; /* выйти из контейнера */
+    margin:1em calc(50% - 50vw); 
+    margin-bottom: 0;
 }
 
 footer img{

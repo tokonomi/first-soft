@@ -1,8 +1,16 @@
 .section_block{
     display: flex;
     align-items: center;
-    position: relative;
-    padding: 56px 0;
+    justify-content: center;
+    padding: 56px 0 156px 0;
+}
+
+.inner_text_block{
+    margin: 0 auto;
+}
+
+.section_block > div{
+    flex: 1;
 }
 
 .text_side h1{
@@ -13,10 +21,6 @@
 }
 .text_side span{
     color: #F2BE45;
-}
-
-.text_side{
-    width: 50vw;
 }
 
 .properties_list{
@@ -44,13 +48,12 @@
 }
 
 .landscape{
+    height: 700px;
     position: relative;
-    height: 100vh;
-    width: 45vw;
 }
 
 .landscape img{
-    height: 100vh;
+    width: 1050px;
     position: absolute;
     right: -40%;
 }
@@ -74,4 +77,34 @@
 }
 .reversed img{
     left: -40%;
+}
+
+@media only screen and (max-width: 1440px) {
+    .properties_list li{
+        max-width: 325px;
+    }
+    .landscape{
+        height: 660px;
+    }
+    .landscape img{
+        top: 50%;
+        transform: translateY(-50%);
+        width: 800px;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .properties_list li{
+        max-width: 255px;
+        font-size: .8em;
+    }
+    .landscape{
+        height: 560px;
+    }
+    .landscape img{
+        top: 50%;
+        transform: translateY(-50%);
+        width: 700px;
+    }
 }
