@@ -105,6 +105,39 @@
     .landscape img{
         top: 50%;
         transform: translateY(-50%);
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .landscape img{
         width: 700px;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .section_block{
+        flex-direction: column-reverse;
+        padding: 0 0 100px 0;
+    }
+    .section_block .reversed{
+        flex-direction: column;
+    }
+    .landscape{
+        position: inherit;
+    }
+    .landscape img{
+        width: 500px;
+        position: inherit;
+        transform: inherit;
+    }
+    .properties_list li{
+        max-width: 245px;
+        font-size: .8em;
+    }
+    br{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 500px) {}
