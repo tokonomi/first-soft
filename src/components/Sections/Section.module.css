@@ -65,3 +65,18 @@
     z-index: 1;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+    .sub_section{
+        flex-direction: column;
+    }
+    .section_text h2{
+        padding: 15px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+        
+    .images img{
+        width: 100%;
+    }
+}
