@@ -62,3 +62,24 @@
 .paragraphs p{
     margin-bottom: 25px;
 }
+
+@media only screen and (max-width: 924px) {
+    .sub_section{
+        flex-direction: column;
+    }
+    .images{
+        padding-bottom: 20px;
+    }
+    .section_text{
+        text-align: center;
+        background: transparent;
+        box-shadow: none;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .images img{
+        max-width: 280px;
+        width: 100%;
+    }
+}
