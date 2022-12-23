@@ -1,7 +1,3 @@
-.priceList_section{
-    width: 100vw;
-}
-
 .price_block h1{
     font-size: 2.4em;
     padding: 10px 0;
@@ -50,24 +46,47 @@
     font-size: 1.5em;
 }
 
-.prices_title{
+.prices_title ul li{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 
 .prices{
     width: 100px;
-}
-
-.prices li{
     text-align: left;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
 
-.prices li span{
+.prices span{
     display: block;
-    font-size: .5em;
+    font-size: .6em;
     text-align: right;
+    
+}
+@media only screen and (max-width: 800px) {
+    .price_un_block{
+        width: 100%;
+    }
+    .price_un_block h1{
+        font-size: 1.9em;
+    }
+    .price_list{
+        max-width: none;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 684px) {
+    .prices_title ul li{
+        font-size: 1.3em;
+    }
+    .prices{
+        width: inherit;
+    }
+    .prices span{
+        padding-left: 15px;
+    }
 }

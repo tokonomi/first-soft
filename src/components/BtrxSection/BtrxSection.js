@@ -8,7 +8,7 @@ const BtrxSection = (props) => {
     // console.log(HTMLReactParser(props.title))
             
     return(
-        <div className={styles.haha}>
+        <div>
             
             <section className={styles.sub_section}>
                 <div>

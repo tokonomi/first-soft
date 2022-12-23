@@ -2,8 +2,10 @@
     display: flex;
     align-items: center;
     vertical-align: middle;
-    justify-content: space-around;
-    padding: 55px 55px;
+    justify-content: center;
+    padding: 55px 0;
+    margin:1em -100%; /* выйти из контейнера */
+    margin:1em calc(50% - 50vw); 
 }
 
 
@@ -30,6 +32,7 @@
 
 .image_side{
     position: relative;
+    padding: 0 50px;
 }
 
 .image_side img{
@@ -41,7 +44,7 @@
     padding-bottom: 10px;
 }
 .text_side_title h2{
-    font-size: 41px;
+    font-size: 1.8em;
     font-weight: 700;
     color: #2e4051;
     margin-bottom: 10px;
@@ -63,3 +66,20 @@
     font-weight: 300;
     font-size: 18px;
 }
+@media only screen and (max-width: 1024px) {
+    .defise{
+        padding-left: 25px;
+    }
+    .defise::before{
+        left: 0px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .section_block{
+        flex-direction: column;
+    }
+    .text_side_title{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px) {}

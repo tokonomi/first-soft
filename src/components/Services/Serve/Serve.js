@@ -16,9 +16,14 @@ const Serve = (props) => {
         setIsOpen(false);
         document.querySelector('body').style.overflow = 'inherit';
     }
+    const breakPoints = [
+        { width: 1, itemsToShow: 1 },
+        { width: 650, itemsToShow: 2 },
+        { width: 1400, itemsToShow: 4, itemsToScroll: 2 }
+    ]
     return(
         <section className={`${styles.service_section}`} id="cards">
-            <ReactElasticCarousel itemsToShow={3} pagination={false} itemsToScroll={3}>
+            <ReactElasticCarousel  breakPoints={breakPoints} pagination={false} itemsToScroll={3}>
                 {
                     data.serveCards.map((e) => {
                         return(

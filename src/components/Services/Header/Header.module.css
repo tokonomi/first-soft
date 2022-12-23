@@ -1,10 +1,9 @@
 .header{
     display: flex;
     height: 100vh;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     vertical-align: middle;
-    padding: 0 55px;
     position: relative;
 }
 .left_side_header{
@@ -20,6 +19,7 @@
 
 .left_side_title h1{
     font-size: 1.8em;
+    max-width: 800px;
 }
 
 .left_side_title span{
@@ -37,7 +37,8 @@
 
 .left_side_header p{
     max-width: 500px;
-    line-height: 25px;
+    line-height: 30px;
+    font-size: 1.5em;
 }
 
 .left_side_header button{
@@ -54,3 +55,24 @@
     max-width: 565px;
 }
 
+@media only screen and (max-width: 800px) {
+    .header{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .left_side_header{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .left_side_header p{
+        max-width: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .right_side_imgs img{
+        width: 100%;
+    }
+    .left_side_header{
+        text-align: center;
+    }
+}

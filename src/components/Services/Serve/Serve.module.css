@@ -111,6 +111,9 @@
     cursor: pointer;
 }
 
+.service_carousel{
+    margin: 0 10px;
+}
 @keyframes modal {
     0%{
         left: 50%;
@@ -125,3 +128,13 @@
         opacity: 1;
     }
 }
+@media only screen and (max-width: 1400px) {
+    .service_title h2{
+        font-size: 1.2em;
+    }
+    .service_title p{
+        font-size: 1.1em;
+    }
+}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 500px) {}
