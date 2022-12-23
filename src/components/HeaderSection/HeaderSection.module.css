@@ -271,4 +271,7 @@
         font-size: 1.2em;
         line-height: 20px;
     }
+    .presentation_text{
+        top: 400px;
+    }
 }
