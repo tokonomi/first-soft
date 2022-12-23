@@ -8,6 +8,9 @@ import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
+import { NavLink } from 'react-router-dom';
+
+import styles from './Nav.module.css';
 
 export default function MobMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -77,13 +80,13 @@ export default function MobMenu() {
         </MenuItem>
         <Divider />
         <MenuItem>
-          1С
+        <NavLink to="/1c" className={styles.link}>1С</NavLink>
         </MenuItem>
         <MenuItem>
-          Bitrix
+        <NavLink to="/crm" className={styles.link}>Bitrix</NavLink>
         </MenuItem>
         <MenuItem>
-          Продукты
+        <NavLink to="/services" className={styles.link}>Продукты</NavLink>
         </MenuItem>
       </Menu>
     </React.Fragment>

@@ -178,3 +178,28 @@
 
 }
 
+
+@media only screen and (max-width: 800px) {
+    .header{
+        flex-direction: column-reverse
+    }
+    .left_side_header h1{
+        text-align: center;
+    }
+    .left_side_header button{ 
+        margin: 50px auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .left_side_header{
+        text-align: center;
+    }
+    .left_side_header h1{
+        font-size: 2em;
+        z-index: 200;
+    }
+    .header{
+        justify-content: center;
+    }
+}
+

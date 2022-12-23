@@ -82,6 +82,9 @@
 
 /* Modal */
 .modal_block{
+    margin:1em -100%; /* выйти из контейнера */
+    margin:1em calc(50% - 50vw); 
+    margin-top: 0;
     background-color: #00000040;
     position: absolute;
     left: 0;
