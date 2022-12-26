@@ -100,11 +100,11 @@
     overflow:unset;
     width: 60vw;
     height: 40vw;
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgba(245, 245, 245, 0.349);
     backdrop-filter: blur(20px);
     animation: modal .5s ease-in;
     padding: 25px 35px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
 
 }
@@ -114,7 +114,7 @@
     top: 0;
     right: 0;
     cursor: pointer;
-    transition: all .5s ease-in-out ;
+    transition: all .2s ease-in-out ;
 }
 .close_btn:hover{
     transform: translateY(-5px) rotate(180deg);
@@ -126,13 +126,14 @@
 }
 
 .modal_title{
-    font-size: 1.7em;
+    font-size: 2em;
     padding-bottom: 5px;
 }
 .detail_element{
     padding: 10px 0;
 }
 .detail_element h3{
+    font-size: 1.8em;
     padding-bottom: 10px;
     color: #F2C010;
 }
@@ -142,9 +143,11 @@
 .detail_element ul li{
     padding-bottom: 5px;
     list-style-type: disc;
+    font-size: 1.5em;
 }
 .detail_element p{
     padding-bottom: 10px;
+    font-size: 1.5em;
 }
 .sub_title{
     font-weight: 500;
@@ -164,6 +167,22 @@
         opacity: 1;
     }
 }
+@media only screen and (max-width: 1800px) {
+    .detail_element p{
+        font-size: 1.3em;
+    }
+    .detail_element ul li{
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width: 1640px) {
+    .detail_element p{
+        font-size: 1em;
+    }
+    .detail_element ul li{
+        font-size: 1em;
+    }
+}
 @media only screen and (max-width: 1400px) {
     .service_title h2{
         font-size: 1.2em;
@@ -171,6 +190,27 @@
     .service_title p{
         font-size: 1.1em;
     }
+    
+    .modal{
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.521); 
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 }
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 500px) {}
+@media only screen and (max-width: 878px) {
+    .modal{
+        height: 500px;
+    }
+}

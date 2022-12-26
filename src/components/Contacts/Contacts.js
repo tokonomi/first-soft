@@ -5,8 +5,8 @@ const Contacts = () => {
     return(
         <section id="contact">
             <div className={styles.contacts_block}>
-                <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4175.662764366596!2d49.871815146408416!3d40.38318236683418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1672049726981!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+                <div className={styles.frame_block}>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4175.662764366596!2d49.871815146408416!3d40.38318236683418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1672049726981!5m2!1sen!2s" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
                 </div>
                 <div className={styles.form_block}>
                     <form>
