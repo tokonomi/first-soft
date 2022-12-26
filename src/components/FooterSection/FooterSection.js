@@ -11,9 +11,9 @@ const FooterSection = (props) => {
                         <h1>{HTMLReactParser(props.title)}</h1>
                         <ul className={styles.properties_list}>
                             {
-                                props.list.map(el => {
+                                props.list.map((el, i) => {
                                     return(
-                                        <li>
+                                        <li key={i}>
                                             <h3>{el.title}</h3>
                                             <p>{el.paragraph}</p>
                                         </li>

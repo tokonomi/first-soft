@@ -12,10 +12,10 @@ const Section = (props) => {
             </div>
             <div className={styles.text_block}>
                 <div className={styles.section_text}>
-                    <h2>{HTMLReactParser(props.title)}</h2> 
+                    {HTMLReactParser(props.title)}
                     <div className={styles.paragraphs}>
-                        {props.text.map(el => {
-                            return <p>{el}</p>
+                        {props.text.map((el, i) => {
+                            return <p key={i}>{el}</p>
                         })}
                     </div>
                     {props.button ? <button>{props.buttonText}</button> : ''}

@@ -34,7 +34,7 @@ const Nav = () => {
                         </ul>
                     </nav>
                     <ul className={styles.side_links}>
-                        <li>Контакты</li>
+                        <li><a href="#contact">Контакты</a></li>
                         <li>О нас</li>
                     </ul>     
                     

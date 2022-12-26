@@ -7,10 +7,12 @@ import Modal from "./Modal";
 
 const Serve = (props) => {
     const [isOpen, setIsOpen] = useState(false)
-    const showModal = () => {
+    const [modalData, setModalData] = useState('')
+    const showModal = (data) => {
         document.getElementById("cards").scrollIntoView()
         setIsOpen(!isOpen);
         document.querySelector('body').style.overflow = 'hidden';
+        setModalData(data)
     }
     const closeModal = () => {
         setIsOpen(false);
@@ -23,11 +25,11 @@ const Serve = (props) => {
     ]
     return(
         <section className={`${styles.service_section}`} id="cards">
-            <ReactElasticCarousel  breakPoints={breakPoints} pagination={false} itemsToScroll={3}>
+            <ReactElasticCarousel  breakPoints={breakPoints} pagination={false} itemsToScroll={1}>
                 {
                     data.serveCards.map((e) => {
                         return(
-                            <div className={styles.service_carousel}>
+                            <div key={e.id} className={styles.service_carousel}>
                                 <div className={styles.service_cards}>
                                     <div className={styles.service_title}>
                                         <h2>{e.title}</h2>
@@ -35,7 +37,7 @@ const Serve = (props) => {
                                     </div>
                                     <div className={styles.serve_description}>
                                         <p>{e.text}</p>
-                                        <button onClick={showModal}>Подробнее</button>
+                                        <button onClick={() => showModal(e)}>Подробнее</button>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +45,7 @@ const Serve = (props) => {
                     })
                 }
             </ReactElasticCarousel>
-            {isOpen ? <Modal opened = {isOpen} close = {closeModal}/> : ''}
+            {isOpen ? <Modal {...modalData} opened = {isOpen} close = {closeModal}/> : ''}
         </section>
     )
 }

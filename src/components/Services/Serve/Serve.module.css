@@ -103,16 +103,52 @@
     background-color: rgba(0, 0, 0, 0.349);
     backdrop-filter: blur(20px);
     animation: modal .5s ease-in;
+    padding: 25px 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
+
 }
 
 .close_btn{
     position: absolute;
+    top: 0;
     right: 0;
     cursor: pointer;
+    transition: all .5s ease-in-out ;
+}
+.close_btn:hover{
+    transform: translateY(-5px) rotate(180deg);
+    color: #F2C010;
 }
 
 .service_carousel{
     margin: 0 10px;
+}
+
+.modal_title{
+    font-size: 1.7em;
+    padding-bottom: 5px;
+}
+.detail_element{
+    padding: 10px 0;
+}
+.detail_element h3{
+    padding-bottom: 10px;
+    color: #F2C010;
+}
+.detail_element ul{
+    padding-bottom: 10px;
+}
+.detail_element ul li{
+    padding-bottom: 5px;
+    list-style-type: disc;
+}
+.detail_element p{
+    padding-bottom: 10px;
+}
+.sub_title{
+    font-weight: 500;
+    padding-bottom: 10px;
 }
 @keyframes modal {
     0%{

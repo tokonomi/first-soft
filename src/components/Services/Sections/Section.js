@@ -15,7 +15,7 @@ const Section = (props) => {
                     </div>
                     <div className={styles.text_side_subs}>
                         {props.text.map((e) => {
-                            return <p className={styles.defise}>{e}</p>
+                            return <p key={e.id} className={styles.defise}>{e}</p>
                         })}
                     </div>
                 </div>

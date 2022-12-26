@@ -9,7 +9,7 @@ const Crm = () => {
             <Header/>
             {
                 data.crm_sections.map(el => {
-                    return <CrmSection {...el}/>
+                    return <CrmSection key={el.id} {...el}/>
                 })
             }
         </div>

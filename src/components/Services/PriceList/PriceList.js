@@ -14,7 +14,7 @@ const PriceList = () => {
                         <div><h2>Наш прайс лист</h2></div>
                         <div className={styles.prices_title}>
                             <ul>
-                                {data.services.map(e => <li><div>{e.title}</div><div className={styles.prices}>{e.price}<span> azn</span></div></li>)}
+                                {data.services.map(e => <li key={e.id}><div>{e.title}</div><div className={styles.prices}>{e.price}<span> azn</span></div></li>)}
                             </ul>
                         </div>
                     </div>

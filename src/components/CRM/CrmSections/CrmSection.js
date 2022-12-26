@@ -15,7 +15,7 @@ const CrmSection = (props) => {
                     </div>
                     <div className={styles.text_side_subs}>
                         {props.text.map(el => {
-                            return <p>{el}</p>
+                            return <p key={el.id}>{el}</p>
                         })}
                     </div>
                 </div>

@@ -11,7 +11,7 @@ const MainC = () => {
             <Predpriyatie/>
             {
                 data.predpriyatie.map(el => {
-                    return <Section {...el}/>
+                    return <Section key={el.id} {...el}/>
                 })
             }
         </div>

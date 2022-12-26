@@ -16,6 +16,7 @@ import MainC from './1C/MainC';
 import Services from './Services/Services';
 import HomePage from './HomePage/HomePage';
 import ScrollToTop from './ScrollToTop';
+import Contacts from './Contacts/Contacts';
 
 class App extends React.Component{
     render(){
@@ -30,6 +31,7 @@ class App extends React.Component{
                             <Route path='/1c' element={<MainC/>}/>
                             <Route path='/services' element={<Services/>}/>
                         </Routes>
+                    <Contacts/>
                     <Footer/>
                 </div>
             </div>
