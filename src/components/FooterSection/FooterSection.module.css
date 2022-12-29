@@ -58,6 +58,25 @@
     right: -40%;
 }
 
+.hide1{
+    transform: translateX(-400px);
+}
+
+.show1{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.hide2{
+    transform: translateX(400px);
+}
+
+.show2{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 2s ease;
+}
 .more_button{
     margin: 10px;
     height: 40px;

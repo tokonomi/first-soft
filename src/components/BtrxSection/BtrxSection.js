@@ -1,11 +1,13 @@
 import React from "react";
-import HTMLReactParser from "html-react-parser";
+import { useInView } from "react-intersection-observer";
+
 import styles from "./BtrxSection.module.css";
 import apple1 from "../../assets/iphone-layer.png"
 import apple2 from "../../assets/iphone-layer2.png"
 
-const BtrxSection = (props) => {
-    // console.log(HTMLReactParser(props.title))
+const BtrxSection = () => {
+    const { ref: item1, inView: myElement1 } = useInView()
+    const { ref: item2, inView: myElement2 } = useInView()
             
     return(
         <div>
@@ -13,12 +15,12 @@ const BtrxSection = (props) => {
             <section className={styles.sub_section}>
                 <div>
                     <div className={styles.images}>
-                        <img src={apple2}/>
-                        <img src={apple1}/>
+                        <img ref={item1} src={apple2} className = {myElement1 ? styles.shown : styles.hidden}/>
+                        <img ref={item2} src={apple1} className = {myElement2 ? styles.shown2 : styles.hidden2}/>
                     </div>
                 </div>
                 <div>
-                    <div className={styles.section_text}>
+                    <div ref={item2} className={`${styles.section_text} ${myElement1 ? styles.shown : styles.hidden}`}>
                         <h2>Знакомьтесь, <span className={styles.blue_text}>BITRIX<span className={styles.dark_blue}>24</span></span> CRM!</h2> 
                         <div className={styles.paragraphs}>
                             <p>

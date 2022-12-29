@@ -1,8 +1,12 @@
 import React from "react";
 import HTMLReactParser from "html-react-parser";
+import { useInView } from "react-intersection-observer";
+
 import styles from './FooterSection.module.css';
 
 const FooterSection = (props) => {
+    const { ref: imgRef, inView: element } = useInView()
+
     return(
         <section>
             <div className={`${styles.section_block} ${props.reversed ? styles.reversed : ''}`}>
@@ -31,7 +35,7 @@ const FooterSection = (props) => {
                     </div>                    
                 </div>
                 <div className={styles.landscape}>
-                    <img src={require('../../assets/' + props.img)} alt=''/>
+                    <img ref={imgRef} src={require('../../assets/' + props.img)} alt='' className={element ? styles[props.show] : styles[props.hide]}/>
                 </div>
             </div>
         </section>

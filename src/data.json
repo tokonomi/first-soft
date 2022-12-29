@@ -60,7 +60,7 @@
         },
         {
             "id": 6,
-            "img": ["cloud"],
+            "img": ["cloud", "med", "sm-cloud"],
             "title":"<h2>1с в облаке</h2>",
             "text": [
                 "Перенесём вашу базу 1с на облако для развития и роста вашего бизнеса"
@@ -93,7 +93,9 @@
             ],
             "button": false,
             "img": "landscape2.png",
-            "reversed": true
+            "reversed": true,
+            "show": "show1",
+            "hide": "hide1"
         },
         {
             "id": 2,
@@ -118,7 +120,9 @@
             ],
             "button": true,
             "img": "landscape1.png",
-            "reversed": false
+            "reversed": false,
+            "show": "show2",
+            "hide": "hide2"
         }
     ],
     "crm_sections": [
