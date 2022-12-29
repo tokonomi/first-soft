@@ -1,13 +1,19 @@
 import React from "react";
 import HTMLReactParser from "html-react-parser";
+import { useInView } from "react-intersection-observer";
 import styles from "./Section.module.css"
 
 const Section = (props) => {
+    const { ref: myRef, inView: myElement } = useInView();
     return(
-        <section className={`${styles.sub_section} ${props.id % 2 ? styles.reversed_section : ''}`}>
-            <div>
+        <section ref={myRef} className={`${styles.sub_section} ${props.id % 2 ? styles.reversed_section : ''} ${myElement ? styles.show : styles.hided}`}>
+            <div className={styles.images_block}>
                 <div className={styles.images}>
-                    <img src={require(`../../assets/home_sections/${props.img}.png`)}/>
+                    {
+                        props.img.map((img) => {
+                            return <img className={styles[img]} src={require(`../../assets/home_sections/${img}.png`)}/>
+                        })
+                    }                    
                 </div>
             </div>
             <div className={styles.text_block}>
