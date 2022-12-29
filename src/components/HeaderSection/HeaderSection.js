@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./HeaderSection.module.css";
-import mac from '../../assets/mac.png'
-import iPad from '../../assets/i-pad.png'
+import mac from '../../assets/header/macbook-pro.png'
+import iPad from '../../assets/header/ipad.png'
 
 const HeaderSection = () => {
     function animated_text_content(clasi = ''){

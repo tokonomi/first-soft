@@ -18,9 +18,8 @@ import HomePage from './HomePage/HomePage';
 import ScrollToTop from './ScrollToTop';
 import Contacts from './Contacts/Contacts';
 
-class App extends React.Component{
-    render(){
-        return(
+const App = () => {
+    return(
             <div id='main_width'>
                 <div className="container">
                     <ScrollToTop/>
@@ -35,9 +34,8 @@ class App extends React.Component{
                     <Footer/>
                 </div>
             </div>
-        )
-    }
-    
+    )
+
 }
 
 export default App;

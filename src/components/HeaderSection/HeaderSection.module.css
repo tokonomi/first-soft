@@ -76,10 +76,10 @@
     margin-top: 33px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
-.images_block .mac_image{
-    
+.mac_image{
     width: 785px;
 }
 
@@ -87,6 +87,21 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    max-width: 350px;
+    animation: ipad 1s ease-in-out;
+}
+@keyframes ipad {
+    0%{
+        transform:translateX(100%);
+        opacity: 0;
+    }
+    75%{
+        transform:translateX(-1%);
+    }
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
 }
 
 .text_scroll{
