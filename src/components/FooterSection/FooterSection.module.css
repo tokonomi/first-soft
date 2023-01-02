@@ -103,12 +103,31 @@
         max-width: 325px;
     }
     .landscape{
-        height: 660px;
+        height: 550px;
     }
     .landscape img{
-        top: 50%;
-        transform: translateY(-50%);
+        /* top: 50%;
+        transform: translateY(-50%); */
         width: 800px;
+    }
+    .hide1{
+        transform: translateX(-400px)!important;
+    }
+    
+    .show1{
+        transform: translateX(0)!important;
+        opacity: 1;
+        transition: all 2s ease;
+    }
+    
+    .hide2{
+        transform: translateX(400px);
+    }
+    
+    .show2{
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 2s ease;
     }
 }
 
@@ -122,8 +141,8 @@
         height: 560px;
     }
     .landscape img{
-        top: 50%;
-        transform: translateY(-50%);
+        /* top: 50%; */
+        /* transform: translateY(-50%); */
         width: 800px;
     }
 }
@@ -153,7 +172,7 @@
     .landscape img{
         width: 500px;
         position: inherit;
-        transform: inherit;
+        /* transform: inherit; */
     }
     .properties_list li{
         max-width: 25%;

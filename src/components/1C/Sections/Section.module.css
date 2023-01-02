@@ -1,11 +1,14 @@
+*{
+    transition: all 1s linear;
+}
 .section_block{
+    height: 100vh;
     display: flex;
     align-items: center;
     vertical-align: middle;
     justify-content: space-around;
     padding: 20px 55px;
 }
-
 .defise::before{
     content: "";
     position: absolute;
@@ -26,9 +29,26 @@
     flex-direction: row-reverse;
 }
 
+.image_side{
+    max-width: 675px;
+    width: 100%;
+}
+
 .image_side img{
     max-width: 675px;
     width: 100%;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1s ease-in-out;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
 }
 
 .text_side_title{
@@ -73,6 +93,12 @@
 @media only screen and (max-width: 800px) {
     .section_block{
         flex-direction: column;
+    }
+    .image_side{
+        height: 700px;
+    }
+    .section_block{
+        height: inherit;
     }
 }
 @media only screen and (max-width: 500px) {

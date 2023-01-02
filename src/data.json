@@ -172,7 +172,7 @@
     "predpriyatie": [
         {
             "id": 1,
-            "img": "",
+            "img": "vreality.gif",
             "title": "Зачем нужна программа 1С?",
             "list": false,
             "text": [
@@ -182,7 +182,7 @@
         },
         {
             "id": 2,
-            "img": "",
+            "img": "applies.gif",
             "title": "Области применения продуктов 1С",
             "list": true,
             "text": [
@@ -201,7 +201,7 @@
         },
         {
             "id": 3,
-            "img": "",
+            "img": "ques.png",
             "title": "Что такое 1С:Предприятие?",
             "list": false,
             "text": [
