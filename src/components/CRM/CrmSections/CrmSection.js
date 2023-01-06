@@ -5,8 +5,13 @@ const CrmSection = (props) => {
     return(
         <section className={styles.section}>
             <div className={`${styles.section_block} ${!(props.id % 2) ? styles.reversed : ''}`}>
-                <div className={styles.image_side}>
-                    <img src={require('../../../assets/mac.png')}/>
+                <div className={`${styles.image_side} ${styles[props.class]}`}>
+                    {
+                        props.img.map((e) => {
+                            console.log(e)
+                            return <img  src={require(`../../../assets/crm-section/${e}`)}/>
+                        })
+                    }
                 </div>
                 <div className={styles.text_side}>
                     <div className={styles.text_side_title}>

@@ -24,8 +24,8 @@ const Header = () => {
             </div>
             <div className={styles.right_side_title}>
                 <div className={styles.right_side_imgs}>
-                    <img src={require('../../../assets/mac.png')}/>
-                    <img src={require('../../../assets/crm/iphone-layer1.png')}/>
+                    <img src={require('../../../assets/crm-section/header.png')}/>
+                    {/* <img src={require('../../../assets/crm/iphone-layer1.png')}/> */}
                 </div>
             </div>
         </header>

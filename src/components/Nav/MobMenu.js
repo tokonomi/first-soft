@@ -73,10 +73,7 @@ export default function MobMenu() {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
         <MenuItem>
-          Контакты
-        </MenuItem>
-        <MenuItem>
-          О нас
+          <a href="#contact">Контакты</a>
         </MenuItem>
         <Divider />
         <MenuItem>

@@ -128,7 +128,8 @@
     "crm_sections": [
         {
             "id": 1,
-            "img": "",
+            "class": "",
+            "img": ["srabota.png", "srabota-phone.png"],
             "title":"Совместная работа",
             "sub_title": "Большой набор разных инструментов",
             "text": [
@@ -139,7 +140,8 @@
         },
         {
             "id": 2,
-            "img": "",
+            "class": "",
+            "img": ["zadaci.gif", "zadaci-phone.png"],
             "title":"Задачи и проекты",
             "sub_title": "Помогают работать вместе и не опаздывать",
             "text": [
@@ -149,7 +151,8 @@
         },
         {
             "id": 3,
-            "img": "",
+            "class": "wins",
+            "img": ["crm-win1.png", "crm-win2.png", "crm-win3.png"],
             "title":"CRM",
             "sub_title": "Продавайте свои услуги",
             "text": [
@@ -159,7 +162,8 @@
         },
         {
             "id": 4,
-            "img": "",
+            "class": "contact",
+            "img": ["contacts.png"],
             "title":"Контакт-центр",
             "sub_title": "Клиентам будет удобно с вами связаться",
             "text": [
