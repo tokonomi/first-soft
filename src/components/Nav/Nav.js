@@ -3,14 +3,12 @@ import { NavLink, Link } from "react-router-dom";
 
 import styles from "./Nav.module.css";
 import logo from '../../assets/logo.png';
-import MobMenu from "./MobMenu";
 
 const Nav = () => {
 
         return(
             <>
                 <div className={styles.mob_menu}>
-                    <MobMenu/>
                     <header>
                         <div className={styles.logo_block}>
                             <span>
