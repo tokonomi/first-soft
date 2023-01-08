@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://tokonomi.github.io/first-soft",
   "dependencies": {
+    "@livecycle/sdk": "^0.1.11",
     "@material-ui/icons": "^4.11.3",
     "@react-spring/web": "^9.6.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -28,8 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"  
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
