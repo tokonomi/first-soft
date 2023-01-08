@@ -1,0 +1,292 @@
+.header{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 200px;
+    position: relative;
+}
+.presentation_text{
+    width: 100%;
+    z-index: -1;
+    transform: rotate(-30deg);
+    position: absolute;
+    bottom: 0;
+}
+
+.sub_section_header{
+    width: 100vw;
+    font-size: 2.25em;
+    line-height: 44px;
+    position:absolute;
+    bottom: -30%;
+    margin:1em -100%; /* выйти из контейнера */
+    margin:1em calc(50% - 50vw); 
+    font-weight: 600;
+    background-color: #f3f3f386;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 30px 55px;
+    box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.295);
+    z-index: 1;
+}
+.head_section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_title{
+    max-width: 700px;
+    /* width: 100%; */
+}
+
+.head_title h1{
+    font-size: 5.8em;
+    line-height: 78px;
+    font-weight: 700;
+}
+
+.head_title p{
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 35px;
+}
+
+.bold_text{
+    font-weight: 700;
+}
+
+.head_title button{
+    width: 170px;
+    height: 40px;
+    border: 0;
+    border-radius: 135px;
+    background-color: #F2BE45;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 15px;
+    margin-top: 30px;
+}
+
+
+.images_block{
+    /* width: 900px; */
+    margin-top: 33px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mac_image{
+    width: 785px;
+}
+
+.pad_image{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 350px;
+    animation: ipad 1s ease-in-out;
+}
+@keyframes ipad {
+    0%{
+        transform:translateX(100%);
+        opacity: 0;
+    }
+    75%{
+        transform:translateX(-1%);
+    }
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+.text_scroll{
+    display: flex;
+}
+
+.text_scroll div{
+    font-weight: 600;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+.text0 div:nth-child(2){
+    animation: animate2 80s linear infinite;
+}
+.text1 div:nth-child(2){
+    animation: animate2 85s linear infinite;
+}
+.text2 div:nth-child(2){
+    animation: animate2 75s linear infinite;
+}
+.text3 div:nth-child(2){
+    animation: animate2 70s linear infinite;
+}
+.text4 div:nth-child(2){
+    animation: animate2 90s linear infinite;
+}
+
+.text0 div{
+    animation: animate 80s linear infinite;
+}
+.text1 div{
+    animation: animate 85s linear infinite;
+}
+.text2 div{
+    animation: animate 75s linear infinite;
+}
+.text3 div{
+    animation: animate 70s linear infinite;
+}
+.text4 div{
+    animation: animate 90s linear infinite;
+}
+
+.text0x div:nth-child(2){
+    animation: animate2 80s linear infinite;
+    color: #F2BE45;
+}
+.text1x div:nth-child(2){
+    animation: animate2 85s linear infinite;
+    color: #F2BE45;
+}
+.text2x div:nth-child(2){
+    animation: animate2 75s linear infinite;
+    color: #F2BE45;
+}
+.text3x div:nth-child(2){
+    animation: animate2 70s linear infinite;
+    color: #F2BE45;
+}
+.text4x div:nth-child(2){
+    animation: animate2 90s linear infinite;
+    color: #F2BE45;
+}
+
+.text0x div{
+    animation: animate 80s linear infinite;
+    color: #F2BE45;
+}
+.text1x div{
+    animation: animate 85s linear infinite;
+    color: #F2BE45;
+}
+.text2x div{
+    animation: animate 75s linear infinite;
+    color: #F2BE45;
+}
+.text3x div{
+    animation: animate 70s linear infinite;
+    color: #F2BE45;
+}
+.text4x div{
+    animation: animate 90s linear infinite;
+    color: #F2BE45;
+}
+
+
+
+@keyframes animate{
+    0%{
+        transform: translateX(-20%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: translateX(-20%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .head_title h1{
+        font-size: 4em;
+        line-height: 1em;
+    }
+    .head_title p{
+        font-size: 1.5em;
+    }
+
+    .images_block .mac_image{
+        width: 685px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .images_block .mac_image{
+        width: 585px;
+    }
+    .pad_image{
+        width: 300px;
+    }    
+}
+@media only screen and (max-width: 1024px) {
+    .images_block .mac_image{
+        width: 485px;
+    }
+    .pad_image{
+        width: 230px;
+    }    
+    .head_title h1{
+        font-size: 3em;
+        line-height: 1em;
+    }
+    .head_title p{
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    .head_section{
+        flex-direction: column-reverse;
+    }
+    .head_title{
+        padding: 25px 0;
+        text-align: center;
+        background-color: #f3f3f386;
+        backdrop-filter: blur(20px);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .sub_section_header{
+        font-size: 1.8em;
+        line-height: 30px;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    .head_title h1{
+        font-size: 2em;
+    }
+    .head_title p{
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    .sub_section_header{
+        bottom: -30%;
+        font-size: 1.5em;
+    }
+    .images_block .mac_image{
+        width: 100%;
+    }
+    .pad_image{
+        width: 50%;
+    }   
+    .sub_section_header{
+        bottom: -20%;
+        font-size: 1.2em;
+        line-height: 20px;
+    }
+    .presentation_text{
+        top: 400px;
+    }
+}

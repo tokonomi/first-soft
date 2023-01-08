@@ -1,0 +1,85 @@
+.section_block{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    padding: 55px 0;
+    margin:1em -100%; /* выйти из контейнера */
+    margin:1em calc(50% - 50vw); 
+}
+
+
+.defise::before{
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 10px;
+    width: 15px!important;
+    height: 2px;
+    background-color: #F2C010;
+    margin-right: 15px;
+}
+
+.defise{
+    position: relative;
+    display: flex;
+}
+
+.reversed{
+    flex-direction: row-reverse;
+    background-color:aliceblue;
+}
+
+.image_side{
+    position: relative;
+    padding: 0 50px;
+}
+
+.image_side img{
+    max-width: 275px;
+    width: 100%;
+}
+
+.text_side_title{
+    padding-bottom: 10px;
+}
+.text_side_title h2{
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2e4051;
+    margin-bottom: 10px;
+}
+.text_side_title p{
+    font-weight: 300;
+    font-size: .8em;
+    color: #F2C010;
+}
+
+
+.text_side{
+    max-width: 500px;
+    width: 100%;
+}
+
+.text_side_subs p{
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+}
+@media only screen and (max-width: 1024px) {
+    .defise{
+        padding-left: 25px;
+    }
+    .defise::before{
+        left: 0px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .section_block{
+        flex-direction: column;
+    }
+    .text_side_title{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px) {}

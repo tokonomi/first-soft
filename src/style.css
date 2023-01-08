@@ -1,0 +1,58 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#main_width{
+    overflow: hidden;
+}
+
+.container{
+    margin: 0 auto;
+    position: relative;
+    max-width: 1720px;
+}
+
+
+._btrx_blue{
+    color:#65C8F6!important; 
+}
+._btrx_Dblue{
+    color:#00699A!important; 
+}
+button{
+    width: 170px;
+    height: 40px;
+    border-radius: 135px;
+    background-color: #F2BE45;
+    border: 0;
+    font-weight: 700;
+}
+
+.rec.rec-arrow:hover {
+    background-color: #F2BE45!important;
+}
+.rec.rec-item-wrapper{
+    padding: 20px 0!important;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.active{
+    color: #F2BE45;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .container{
+        max-width: 1320px;
+    }    
+}
